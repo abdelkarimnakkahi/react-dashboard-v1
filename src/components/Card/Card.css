@@ -1,0 +1,100 @@
+.compact-card{
+    display: flex;
+    flex: 1;
+    height: 7rem !important;
+    border-radius: .7rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.compact-card:hover{
+    box-shadow: none;
+}
+
+.compact-card .radial-bar{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap:1rem;
+}
+
+.CircularProgressbar{
+    width: 4rem !important;
+}
+
+.CircularProgressbar-path{
+    stroke: #fff !important;
+    stroke-width: 8px !important;
+    filter: drop-shadow(2px 4px 6px 1px#fff);
+}
+
+.CircularProgressbar-trail{
+    display: none;
+}
+
+.CircularProgressbar-text{
+    fill: #fff !important;
+}
+
+.radial-bar>span{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.detail{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.detail>span:nth-child(2){
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.detail>span:nth-child(3){
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Expanded component */
+
+.expanded-card{
+    position: absolute;
+    width: 70%;
+    /* height: 70vh; */
+    left: 13rem;
+    /* transform: translate(-50%, -50%);  */
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.expanded-card .radial-bar{
+    cursor: pointer;
+    width: fit-content;
+    align-self: flex-end;
+}
+
+.expanded-card span:first-of-type{
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.expanded-card span:last-of-type{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.chart-container{
+    width: 75%;
+}
