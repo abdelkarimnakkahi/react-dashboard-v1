@@ -1,6 +1,12 @@
-.right-side{
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    justify-content: space-evenly;
+.right-side {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1140px) {
+  .right-side {
+    justify-content: flex-start;
+  }
 }

@@ -1,24 +1,34 @@
-.MuiTableRow-root > *{
-    padding: 10px;
+.MuiTableRow-root > * {
+  padding: 10px;
 }
 
-.MuiTableRow-root.MuiTableRow-head > *{
-    font-weight: bold;
+.MuiTableRow-root.MuiTableRow-head > * {
+  font-weight: bold;
 }
 
-.Table, td, th{
-    border: 0;
+.Table,
+td,
+th {
+  border: 0;
 }
 
-.Table:first-child{
-    border-radius: 0.7rem !important;
+.Table:first-child {
+  border-radius: 0.7rem !important;
 }
 
-.status{
-    padding: 5px;
-    border-radius: 5px;
+.status {
+  padding: 5px;
+  border-radius: 5px;
 }
 
-.details{
-   color: #009bfc; 
+.details {
+  color: #009bfc;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1140px) {
+  .Table {
+    width: 150%; /**/
+  }
 }
